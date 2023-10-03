@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="app.js">
+  <script src="app.js"></script>
+  
   <title>Calculator</title>
 </head>
 
@@ -14,119 +15,83 @@
  <button id="mode-toggle" class="dark-mode">dark-mode</button>
    <button class="light-mode">light-mode</button>
 
+
+
 <div class="whole-page">
+  
+    <div class="display">
+
+      <p class="calculation-display" id="calculation-display">0</p>
+
+      <p class="result-display" id="result-display"> 
+        0
+      </p>
+
+    </div>
+
     <p>
-      20
+    
+      <button class="num-but" onclick="updateCalculation('1');">1</button>
+    
+    
+      <button class="num-but" onclick="updateCalculation('2');">2</button>
+    
+    
+      <button class="num-but" onclick="updateCalculation('3');">3</button>
+    
+    
+      <button class="Orange-button" onclick="updateCalculation(' + ');">+</button>
+
     </p>
     
     <p>
     
-        <button class="num-but" onclick="
-        calculation += '1';
-        console.log(calculation);
-        ">1</button>
+      <button class="num-but" onclick="updateCalculation('4');">4</button>
     
+      <button class="num-but" onclick="updateCalculation('5');">5</button>
+
+      <button class="num-but" onclick="updateCalculation('6');">6</button>
+
+      <button class="num-but" onclick="updateCalculation(' - ');">-</button>
+
     
-      <button class="num-but" onclick=" 
-      calculation += '2';
-      console.log(calculation);
-      "
-      >2</button>
-    
-    
-      <button class="num-but" onclick="
-      calculation += '3';
-      console.log(calculation);
-     ">3</button>
-    
-    
-      <button class="Orange-button" onclick="
-      calculation += ' + '
-      console.log(calculation);
-      "
-    
-      >+</button>
     </p>
     
     <p>
     
-      <button class="num-but" onclick="
-        calculation += '4'
-        console.log(calculation);
-        ">4</button>
+      <button class="num-but" onclick="updateCalculation('7');">7</button>
+
     
-      <button class="num-but" onclick="
-      calculation += '5'
-      console.log(calculation);
-      ">5</button>
+      <button class="num-but" onclick="updateCalculation('8');">8</button>
+
       
-      <button class="num-but" onclick="
-      calculation += '6'
-      console.log (calculation);
-      ">6</button>
-    
-      <button class="Orange-button" onclick="
-      calculation += ' - ';
-      console.log(calculation);
-      ">-</button>
+      <button class="num-but" onclick="updateCalculation('9');">9</button>
+
+      <button class="num-but" onclick="updateCalculation(' * ');">*</button>
+
     
     </p>
     
     <p>
     
-      <button class="num-but" onclick="
-        calculation += '7';
-        console.log(calculation);
-        ">7</button>
-    
-      <button class="num-but" onclick="
-      calculation += '8';
-      console.log(calculation);
-      ">8</button>
-      
-      <button class="num-but" onclick="
-      calculation += '9';
-      console.log(calculation);
-      ">9</button>
-    
-      <button class="Orange-button" onclick="
-      calculation += ' * '
-      console.log(calculation)
-      ">*</button>
-    
-    </p>
-    
-    <p>
-    
-      <button class="num-but" onclick="
-        calculation += '0';
-        console.log(calculation);
-        ">0</button>
-    
-      <button class="num-but" onclick="
-      calculation += '.';
-      console.log(calculation);
-      ">.</button>
-      
-      <button class="num-but" onclick="
-      calculation = eval(calculation);
-      console.log(calculation);
-      ">=</button>
-    
-      <button class="Orange-button" onclick="
-      calculation += ' / '
-      console.log(calculation)
-      ">/</button>
+      <button class="num-but" onclick="updateCalculation('0');">0</button>
+
+      <button class="num-but" onclick="updateCalculation('.');">.</button>
+
+      <button class="num-but" onclick="calculateResult();">=</button>
+
+
+      <button class="num-but" onclick="updateCalculation(' / ');">/</button>
+
     
     </p>
     
     
     <p>
-    <button class="clear-button" onclick="
-      calculation = '';
-      console.log(calculation);
-      ">Clear</button>
-    
+    <button class="clear-button" onclick="clearDisplay()">Clear</button>
+
+      <button class="Del-button">Del</button>
+
     </p>
       
 </div>

@@ -1,22 +1,26 @@
-let calculation = ''; // Declare calculation variable
+var calculation = ''; // Initialize the calculation variable
 
 // Function to update calculation and log it
 function updateCalculation(value) {
   calculation += value;
-  console.log(calculation);
+  document.getElementById("calculation-display").innerText = calculation;
 }
 
+// Function to calculate the result
+function calculateResult() {
+  try {
+    calculation = eval(calculation);
+    calculation = Math.round(calculation * 100) / 100; // Round to two decimal places
+    document.getElementById('result-display').textContent = calculation;
+  } catch (error) {
+    document.getElementById('result-display').innerText = 'Error';
+    calculation = '';
+  }
+}
 
-
-
-  calculation = eval(calculation);
-  console.log(calculation);
-
- 
-  const modeToggle = document.getElementById('mode-toggle');
-  const body = document.body;
-
-   modeToggle.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-  body.classList.toggle('light-mode');
- });
+// Function to clear the display
+function clearDisplay() {
+  calculation = '';
+  document.getElementById("calculation-display").innerText = '';
+  document.getElementById('result-display').textContent = '0';
+}
