@@ -1,5 +1,5 @@
 .whole-page {
-  width: fit-content;
+  max-width: 280px;
   background: rgba( 188, 42, 94, 0.2 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 10.5px );
@@ -7,12 +7,11 @@
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   justify-content: center;
-  margin-left: 420px;
+  margin: auto;
   margin-top: 75px;
          }
 
 .num-but {
-
   color: white;
   background-color: rgb(51, 51, 51);
   height: 60px;
@@ -21,7 +20,8 @@
   border: none;
   font-size: 26px;
   cursor: pointer;
-  margin-right: 5px;
+  margin-left: 5px;
+  justify-content: center;
 }
 
 
@@ -33,7 +33,7 @@
   border: none;
   font-size: 26px;
   cursor: pointer;
-  margin-right: 5px;
+  margin-left: 5px;
   color: white;
 
 }
@@ -117,23 +117,3 @@
   overflow: hidden;
   text-overflow: ellipsis; 
 } 
-
-/* Media query for screens smaller than 768px (typical mobile devices) */
-@media (max-width: 768px) {
-  .calculator {
-    width: 80%; /* Calculator container narrower */
-  }
-
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Display buttons in a 4-column grid on mobile */
-  }
-
-  .num-but,
-  .Orange-button,
-  .clear-button {
-    font-size: 18px; /* Reduce font size for buttons on mobile */
-    width: 100%; /* Make buttons full width on mobile */
-    margin: 5px 0; /* Add a small margin between buttons */
-  }
-}
