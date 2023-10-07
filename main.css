@@ -117,3 +117,30 @@
   overflow: hidden;
   text-overflow: ellipsis; 
 } 
+
+.Update-btn {
+  background-color: white;
+  border-color: rgb(41, 118, 211);
+  border-style: solid;
+  border-width: 1px;
+  color:rgb(41, 118, 211);
+  width: 75px;
+  border-radius: 14px 14px 14px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition:  background-color 1s,
+  color 1s;
+  margin: auto;
+  justify-content: center;
+  margin-left: 290px;
+  margin-top: 35px
+}
+
+.Update-btn:hover {
+  background-color:rgb(41, 118, 211);
+  color: white;
+}
+
+.Update-btn:active {
+  opacity: 0.7;
+}

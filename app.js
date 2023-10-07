@@ -8,7 +8,7 @@ function updateCalculation(value) {
 
 }
 
-// Function to calculate the result
+// Calculate the result
 function calculateResult() {
   try {
     calculation = eval(calculation);
@@ -24,7 +24,7 @@ function calculateResult() {
   }
 }
 
-// Function to clear the display
+//  Clear the display
 function clearDisplay() {
   calculation = '';
   document.getElementById("calculation-display").innerText = '';
@@ -36,6 +36,6 @@ function deleteLastCharacter() {
 document.getElementById("result-display").innerText = "0"
 document.getElementById("calculation-display").innerText = calculation
 
-calculation = calculation.toString().slice(0, -1); // Remove the last character
+calculation = calculation.toString().slice(0, -1); // Remove last character
 console.log(calculation);
 }
