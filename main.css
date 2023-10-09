@@ -24,7 +24,6 @@
   justify-content: center;
 }
 
-
 .Orange-button {
   background-color: rgb(254, 160, 10);
   height: 60px;
@@ -37,7 +36,6 @@
   color: white;
 
 }
-
 
 .clear-button {
   font-size: 17px;
@@ -61,25 +59,6 @@
   border: none;
   cursor: pointer;
   margin-right: 5px;
-}
-
-.mode-toggle {
-  font-family: Arial, sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  margin: 25px;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: var(--background-color)}
-  /* Dark Mode Styes */
- 
-
-/* Light Mode Styles */
-  .light-mode {
-  --background-color: #fff;
-  --text-color: #333;
 }
 
 .display {
@@ -136,11 +115,11 @@
   margin-top: 35px
 }
 
-.Update-btn:hover {
-  background-color:rgb(41, 118, 211);
-  color: white;
+.num-but:hover {
+  background-color:rgb(0, 255, 255);
+  color: rgb(15, 2, 2);
 }
 
-.Update-btn:active {
+.num-but:active {
   opacity: 0.7;
 }
